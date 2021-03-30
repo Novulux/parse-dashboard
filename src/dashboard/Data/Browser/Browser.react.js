@@ -866,6 +866,7 @@ class Browser extends DashboardView {
         objectIds.push(objectId);
       }
       query.containedIn('objectId', objectIds);
+      query.limit(10000);
     }
 
     const classColumns = this.getClassColumns(className, false);
