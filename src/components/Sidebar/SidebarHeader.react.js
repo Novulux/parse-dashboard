@@ -33,7 +33,7 @@ export default class SidebarHeader extends React.Component {
           <div className={styles.version}>
             <div>
               Parse Dashboard {version}
-              <div>
+              <div id="dashboardUser">
                 {this.state.dashboardUser}
               </div>
             </div>
