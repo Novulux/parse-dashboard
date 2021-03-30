@@ -434,6 +434,7 @@ class Browser extends DashboardView {
       }
       if (field[0] === '-') {
         field = field.substr(1);
+        comp = this.state.data[this.state.data.length - 1].get(field);
         query.lessThan(field, comp);
         ascending = false;
       } else {
